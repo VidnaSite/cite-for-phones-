@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="ФиксЛаб — ремонт смартфонов в Барановичах. Замена стекла, дисплея, батареи и разъёмов за 30 минут при вас. Бесплатная диагностика, гарантия до 12 месяцев. Apple, Samsung, Xiaomi, Huawei, Honor.">
 <meta name="theme-color" content="#0B1526">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light">
+<meta name="nightmode" content="disable">
+<meta name="format-detection" content="telephone=no">
 <title>ФиксЛаб — Ремонт смартфонов в Барановичах · Замена стекла и батареи за 30 минут</title>
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -64,7 +68,10 @@
 }
 
 /* ============ RESET ============ */
-*,*::before,::after{box-sizing:border-box}
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--font-body);color:var(--text);background:var(--bg);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{max-width:100%;display:block}
@@ -629,7 +636,6 @@ ul{margin:0;padding:0;list-style:none}
   .diag-item,.diag-item .di-dot svg,.diag-done,.diag-bar span{opacity:1!important;transform:none!important}
 }
 html{background:#0B1526;overflow-x:clip}
-@media (max-width:1024px){body{background:var(--ink-900)}}
 </style>
 </head>
 <body>
